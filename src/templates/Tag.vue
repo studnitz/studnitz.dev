@@ -3,11 +3,7 @@
     <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
 
     <div class="posts">
-      <PostCard
-        v-for="edge in $page.tag.belongsTo.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      />
+      <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
 </template>
@@ -25,7 +21,7 @@ query Tag ($id: String!) {
             date (format: "D. MMMM YYYY")
             timeToRead
             description
-            coverImage (width: 860, blur: 10)
+            cover_image (width: 860, blur: 10)
             content
           }
         }

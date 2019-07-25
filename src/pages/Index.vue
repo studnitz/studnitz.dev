@@ -5,11 +5,7 @@
 
     <!-- List posts -->
     <div class="posts">
-      <PostCard
-        v-for="edge in $page.posts.edges"
-        :key="edge.node.id"
-        :post="edge.node"
-      />
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
     </div>
   </Layout>
 </template>
@@ -30,7 +26,7 @@
         date (format: "D. MMMM YYYY")
         timeToRead
         description
-        coverImage (width: 770, height: 380, blur: 10)
+        cover_image (width: 770, height: 380, blur: 10)
         ...on Post {
             id
             title
