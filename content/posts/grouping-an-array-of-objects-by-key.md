@@ -2,7 +2,7 @@
 title: Grouping an array of objects by key
 date: 2019-07-25
 published: true
-tags: ['Javascript', 'Functional Programming']
+tags: ['javascript', 'functional programming', 'arrays']
 canonical_url: false
 description: 'With the help of array.reduce, the Map data structure and higher-order functions you can do a lot in JavaScript, for example a generic groupBy function for an array of objects.'
 ---
