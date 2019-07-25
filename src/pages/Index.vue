@@ -48,8 +48,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title:
-      "Alexander von Studnitz — Computer Science student & Software Engineer"
+    title: "Computer Science student & Software Engineer"
   }
 };
 </script>
