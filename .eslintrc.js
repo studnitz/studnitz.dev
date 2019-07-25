@@ -8,14 +8,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'vue/component-name-in-template-casing': ['error', 'PascalCase'],
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'any',
-        },
-      },
-    ],
+    'vue/no-v-html': 'off',
+    'vue/require-prop-types': 'off',
     'prettier/prettier': 'error',
   },
 }
