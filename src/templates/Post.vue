@@ -12,10 +12,6 @@
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
-
-      <div class="post__footer">
-        <PostTags :post="$page.post" />
-      </div>
     </div>
 
     <div class="post-comments">
@@ -58,11 +54,6 @@ query Post ($path: String!) {
     path
     date (format: "D. MMMM YYYY")
     timeToRead
-    tags {
-      id
-      title
-      path
-    }
     description
     content
   }
