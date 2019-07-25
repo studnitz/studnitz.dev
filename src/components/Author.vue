@@ -9,13 +9,15 @@
       blur="5"
     />
 
-    <h1 v-if="showTitle" class="author__site-title">{{ $static.metaData.siteName }}</h1>
+    <h1 v-if="showTitle" class="author__site-title">
+      {{ $static.metaData.siteName }}
+    </h1>
 
     <p class="author__intro">
-      I'm a Computer Science student at TU Darmstadt and work as a Software Engineer at
-      <a
-        href="//clickbar.rocks"
-      >clickbar.</a> Always looking to simplify things.
+      I'm a Computer Science student at TU Darmstadt and work as a Software
+      Engineer at
+      <a href="//clickbar.rocks">clickbar.</a> Always looking to simplify
+      things.
     </p>
 
     <p class="author__links">
@@ -36,8 +38,8 @@ query {
 
 <script>
 export default {
-  props: ["showTitle"]
-};
+  props: ['showTitle'],
+}
 </script>
 
 <style lang="scss">
